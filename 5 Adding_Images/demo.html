@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structure Of A Web-Page</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Shreyas Gosavi" />
+    <meta
+      name="description"
+      content="This web page focuses on proper structuring of HTML page and giving importance to the semantics of the page"
+    />
+    <link rel="stylesheet" href="css/demo.css" type="text/css" />
+  </head>
+
+  <body>
+
+    <h1>This is how we structure a web-page !</h1>
+    <hr>
+
+    <nav>
+      <ul>
+        <a href="#intoduction"><li>Introduction</li></a>
+        <a href="#importantElements"><li>Important Elements</li></a>
+        <a href="#sampleExample"><li>Sample Example</li></a>
+      </ul>
+    </nav>
+
+    <hr>
+    <section id="introduction">
+    <h2>Why is it necessary ?</h2>
+    <p>
+      Structuring a web-page is very important as it helps us to make pages
+      looks better and also easy to maintain. While designing a web-page we can
+      also consider semantics of the page's content so that the pages become
+      more <em>accessible</em> and can be interpreted by wider audience.
+    </p>
+  </section>
+    <hr />
+
+    <section id="importantElements">
+    <h2>Flow of the document</h2>
+    <p>
+      A document has several sections which can be identified by
+      <em>HTML-tags</em>. Some are used for providing several properties to the
+      document and some acts as a container for the content of the document.
+    </p>
+
+    <h3>Lets look at the main HTML tags :</h3>
+    <dl>
+      <!-- dl : description list -->
+      <!-- dt : description term   -->
+      <!-- dl : description details -->
+      <dt>!DOCTYPE :</dt>
+      <dd>
+        Provides information to <i>Browser</i> on how to render the document.
+      </dd>
+
+      <dt>HTML :</dt>
+      <dd>
+        It is where the content of the page resides which includes the
+        <strong>head</strong> and <strong>body</strong> elements.
+      </dd>
+
+      <dt>Head :</dt>
+      <dd>
+        It contains meta-data of the document which includes :
+        <ul>
+          <li>Character-Encoding of the document</li>
+          <li>Document Title</li>
+          <li>Document Description</li>
+          <li>Author Name</li>
+          <li>Links to several resources that can be embeded to the page</li>
+        </ul>
+      </dd>
+
+      <dt>Body</dt>
+      <dd>
+        It consists of the contents that is visible in the browser which has
+        several other elements that makes it possible to structure the page in a
+        way we want.
+      </dd>
+    </dl>
+
+    <h3>Order Of Elements :</h3>
+    <p>
+      Elements listed above should be placed in the
+      <strong>same order !!</strong>
+    </p>
+  </section>
+    <hr />
+    <section id="sampleExample">
+    <h2>Sample HTML Structure :</h2>
+    <p>
+      You can view the Sample HTML Structure by referring to the following link
+      :
+      <a href="sampleStructure.html" target="_blank" style="color: white">Look at it !!</a>
+    </p>
+  </section>
+  </body>
+</html>
