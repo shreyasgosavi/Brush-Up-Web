@@ -177,6 +177,9 @@
           <h2>Tell us about yourself !!</h2>
 
           <form action="https://httpbin.org/get" method="get">
+
+            <fieldset>
+              <legend>Details</legend>
             <p>
               <label for="firstName">First Name : </label>
               <input type="text" name="firstName" id="firstName" required />
@@ -199,7 +202,7 @@
                   <option value="Badminton">Badminton</option>
                 </optgroup>
 
-                <optgroup label="Hobies">
+                <optgroup label="Hobbies">
                   <option value="Sketching">Sketching</option>
                   <option value="Photography">Photography</option>
                   <option value="Coding">Coding</option>
@@ -210,6 +213,7 @@
                 </optgroup>
               </select>
             </p>
+          </fieldset>
 
             <input type="submit" value="Submit" />
           </form>
