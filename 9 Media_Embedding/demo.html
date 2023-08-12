@@ -35,7 +35,6 @@
     <main>
       <!--  -->
       <article>
-
         <h2>Text-Contents</h2>
         <section id="introduction">
           <h3>Why do we need it?</h3>
@@ -62,8 +61,8 @@
           <h3>Flow of the document</h3>
           <p>
             A document has several sections which can be identified by
-            <em>HTML-tags</em>. Some are used for providing meta-data
-            to the document and some acts as a container for the content of the
+            <em>HTML-tags</em>. Some are used for providing meta-data to the
+            document and some acts as a container for the content of the
             document.
           </p>
 
@@ -179,82 +178,118 @@
           <h3>Tell us about yourself !!</h3>
 
           <form action="https://httpbin.org/get" method="get">
-
             <fieldset>
               <legend>Details</legend>
-            <p>
-              <label for="firstName">First Name : </label>
-              <input type="text" name="firstName" id="firstName" required />
-            </p>
-            <p>
-              <label for="lastName">Last Name : </label>
-              <input type="text" name="lastName" id="lastName" required />
-            </p>
-            <p>
-              <label for="Description">Description :</label>
-              <input type="textarea" name="description" id="description" />
-            </p>
+              <p>
+                <label for="firstName">First Name : </label>
+                <input type="text" name="firstName" id="firstName" required />
+              </p>
+              <p>
+                <label for="lastName">Last Name : </label>
+                <input type="text" name="lastName" id="lastName" required />
+              </p>
+              <p>
+                <label for="Description">Description :</label>
+                <input type="textarea" name="description" id="description" />
+              </p>
 
-            <p>
-              <label for="favActivity">Favourite Activity :</label>
-              <select name="favActivity" id="" multiple size="4">
-                <optgroup label="Sports">
-                  <option value="Cricket">Cricket</option>
-                  <option value="Football">Football</option>
-                  <option value="Badminton">Badminton</option>
-                </optgroup>
+              <p>
+                <label for="favActivity">Favourite Activity :</label>
+                <select name="favActivity" id="" multiple size="4">
+                  <optgroup label="Sports">
+                    <option value="Cricket">Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Badminton">Badminton</option>
+                  </optgroup>
 
-                <optgroup label="Hobbies">
-                  <option value="Sketching">Sketching</option>
-                  <option value="Photography">Photography</option>
-                  <option value="Coding">Coding</option>
-                </optgroup>
+                  <optgroup label="Hobbies">
+                    <option value="Sketching">Sketching</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Coding">Coding</option>
+                  </optgroup>
 
-                <optgroup>
+                  <optgroup></optgroup>
+                </select>
+              </p>
+            </fieldset>
 
-                </optgroup>
-              </select>
-            </p>
-          </fieldset>
+            <fieldset>
+              <legend>Favourite Food ?</legend>
 
-          <fieldset>
-            <legend>Favourite Food ?</legend>
-            
-            <p>
-              <input type="radio" name="food" id="Fish" value="Fish">
-              <label for="Fish" >Fish</label>
-              <input type="radio" name="food" id="Chicken" value="Chicken">
-              <label for="Chicken" >Chicken</label>
-              <input type="radio" name="food" id="Paneer" value="Paneer">
-              <label for="Paneer" >Paneer</label>
-              <input type="radio" name="food" id="Others" value="Others">
-              <label for="Others" >Others</label>
-            </p>
-
-          </fieldset>
+              <p>
+                <input type="radio" name="food" id="Fish" value="Fish" />
+                <label for="Fish">Fish</label>
+                <input type="radio" name="food" id="Chicken" value="Chicken" />
+                <label for="Chicken">Chicken</label>
+                <input type="radio" name="food" id="Paneer" value="Paneer" />
+                <label for="Paneer">Paneer</label>
+                <input type="radio" name="food" id="Others" value="Others" />
+                <label for="Others">Others</label>
+              </p>
+            </fieldset>
             <input type="submit" value="Submit" />
           </form>
         </section>
       </article>
 
       <article>
-        <h2>Embedding Multimedia Files </h2>
-        <p>We can also add multi-media data like images, video and audio in HTML document.</p>
+        <h2>Embedding Multimedia Files</h2>
+        <p>
+          We can also add multi-media data like images, video and audio in HTML
+          document.
+        </p>
 
-        <section >
-
-          <h3>Images</h3>
-          <figure>
-            <img src="../images/pole-image.jpg" alt="Image of a white pole in a sunny day" 
-            height="400" width="225" > 
-            <figcaption>
-              Credits : @shreyasgosavi from pexels community.  
-            </figcaption>
-          </figure>
+        <section>
           
+          <h3>Images</h3>
+
+          <article style="display:inline-block">
+            <figure>
+              <img
+                src="../images/pole-image.jpg"
+                alt="Image of a white pole in a sunny day"
+                height="400"
+                width="225"
+                loading="lazy"
+              />
+              <figcaption>
+                Credits : <a href="https://www.pexels.com/@shreyas-gosavi-751124/gallery/" title="Link to Shreyas Gosavi's pexel profile">@shreyas-gosavi</a> from pexels community.
+              </figcaption>
+            </figure>
+          </article>
+
+          <article style="display:inline-block">
+            <figure>
+              <img
+                src="../images/image-3.jpg"
+                alt="Image of a white pole in a sunny day"
+                height="400"
+                width="225"
+                loading="lazy"
+              />
+              <figcaption>
+                Credits : <a href="https://www.pexels.com/@shreyas-gosavi-751124/gallery/" title="Link to Shreyas Gosavi's pexel profile">@shreyas-gosavi</a> from pexels community.
+              </figcaption>
+            </figure>
+          </article>
+
+          <article style="display:inline-block">
+            <figure>
+              <img
+                src="../images/image-4.jpg"
+                alt="Image of a white pole in a sunny day"
+                height="400"
+                width="225"
+                loading="lazy"
+              />
+              <figcaption>
+                Credits : <a href="https://www.pexels.com/@shreyas-gosavi-751124/gallery/" title="Link to Shreyas Gosavi's pexel profile">@shreyas-gosavi</a> from pexels community.
+              </figcaption>
+            </figure>
+          </article>
+
         </section>
       </article>
-
     </main>
     <!-- End Main  -->
 
