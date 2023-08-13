@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structure Of A Web-Page</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Shreyas Gosavi" />
+    <meta
+      name="description"
+      content="This web page focuses on proper structuring of HTML page and giving importance to the semantics of the page"
+    />
+    <link rel="stylesheet" href="css/demo.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- START  HEADER -->
+    <!-- There can be more than one header per html-page -->
+    <header>
+      <h1>This is how we structure a web-page !</h1>
+
+      <!-- There can be more than one nav elements in a page. For accessibility we give label to the nav-elements with the help of 'aria-label' -->
+      <nav aria-label="main_navigation">
+        <ul>
+          <li><a href="#intoduction">Introduction</a></li>
+          <li><a href="#importantElements">Important Elements</a></li>
+          <li><a href="#sampleExample">Sample Example</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- END  HEADER -->
+
+    <hr />
+
+    <!-- There can be only one main-element per html-page -->
+    <!-- Start Main  -->
+    <main>
+      <!--  -->
+      <article>
+        <h2>Text-Contents</h2>
+        <section id="introduction">
+          <h3>Why do we need it?</h3>
+
+          <figure>
+            <img
+              src="../images/QuestionMark.png"
+              alt="Questionmaek Image"
+              width="370"
+              height="367"
+            />
+            <figcaption>
+              Structuring a web-page is very important as it helps us to make
+              pages looks better and also easy to maintain. While designing a
+              web-page we can also consider semantics of the page's content so
+              that the pages become more <em>accessible</em> and can be
+              interpreted by wider audience.
+            </figcaption>
+          </figure>
+        </section>
+        <hr />
+
+        <section id="importantElements">
+          <h3>Flow of the document</h3>
+          <p>
+            A document has several sections which can be identified by
+            <em>HTML-tags</em>. Some are used for providing meta-data to the
+            document and some acts as a container for the content of the
+            document.
+          </p>
+
+          <h3>Lets look at the main HTML tags :</h3>
+          <dl>
+            <!-- dl : description list -->
+            <!-- dt : description term   -->
+            <!-- dl : description details -->
+            <dt>!DOCTYPE :</dt>
+            <dd>
+              Provides information to <i>Browser</i> on how to render the
+              document.
+            </dd>
+
+            <dt>HTML :</dt>
+            <dd>
+              It is where the content of the page resides which includes the
+              <strong>head</strong> and <strong>body</strong> elements.
+            </dd>
+
+            <dt>Head :</dt>
+            <dd>
+              It contains meta-data of the document which includes :
+              <ul>
+                <li>Character-Encoding of the document</li>
+                <li>Document Title</li>
+                <li>Document Description</li>
+                <li>Author Name</li>
+                <li>
+                  Links to several resources that can be embeded to the page
+                </li>
+              </ul>
+            </dd>
+
+            <dt>Body</dt>
+            <dd>
+              It consists of the contents that is visible in the browser which
+              has several other elements that makes it possible to structure the
+              page in a way we want.
+            </dd>
+          </dl>
+
+          <h3>Order Of Elements :</h3>
+          <p>
+            Elements listed above should be placed in the
+            <strong>same order !!</strong>
+          </p>
+        </section>
+        <hr />
+        <section id="sampleExample">
+          <h3>Sample HTML Structure :</h3>
+          <figure>
+            <p>
+              You can view the Sample HTML Structure by referring to the
+              following link :
+              <a
+                href="sampleStructure.html"
+                target="_blank"
+                style="color: white"
+                >Look at it !!</a
+              >
+            </p>
+          </figure>
+        </section>
+        <hr />
+
+        <section>
+          <h3>Contents Of Body :</h3>
+
+          <table>
+            <caption>
+              Elements to mark-up body elements.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Function</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row">Article</th>
+                <td>Portion of the page which defines on its own.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Section</th>
+                <td>
+                  It is used to divide the content of the page in proper
+                  sections.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Headings</th>
+                <td>
+                  Used to give heading to different sections of the pages and
+                  have six levels from &lt;h1&gt; to &lt;h6&gt;
+                </td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td colspan="2">And many more ....</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+
+        <section>
+          <h3>Tell us about yourself !!</h3>
+
+          <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+              <legend>Details</legend>
+              <p>
+                <label for="firstName">First Name : </label>
+                <input type="text" name="firstName" id="firstName" required />
+              </p>
+              <p>
+                <label for="lastName">Last Name : </label>
+                <input type="text" name="lastName" id="lastName" required />
+              </p>
+              <p>
+                <label for="Description">Description :</label>
+                <input type="textarea" name="description" id="description" />
+              </p>
+
+              <p>
+                <label for="favActivity">Favourite Activity :</label>
+                <select name="favActivity" id="" multiple size="4">
+                  <optgroup label="Sports">
+                    <option value="Cricket">Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Badminton">Badminton</option>
+                  </optgroup>
+
+                  <optgroup label="Hobbies">
+                    <option value="Sketching">Sketching</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Coding">Coding</option>
+                  </optgroup>
+
+                  <optgroup></optgroup>
+                </select>
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Favourite Food ?</legend>
+
+              <p>
+                <input type="radio" name="food" id="Fish" value="Fish" />
+                <label for="Fish">Fish</label>
+                <input type="radio" name="food" id="Chicken" value="Chicken" />
+                <label for="Chicken">Chicken</label>
+                <input type="radio" name="food" id="Paneer" value="Paneer" />
+                <label for="Paneer">Paneer</label>
+                <input type="radio" name="food" id="Others" value="Others" />
+                <label for="Others">Others</label>
+              </p>
+            </fieldset>
+            <input type="submit" value="Submit" />
+          </form>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Embedding Multimedia Files</h2>
+          <p>
+            We can also add multi-media data like images, video and audio in
+            HTML document.
+          </p>
+        </header>
+        <section>
+          <h3>Images</h3>
+
+          <article style="display: inline-block">
+            <figure>
+              <img
+                src="../images/pole-image.jpg"
+                alt="Image of a white pole in a sunny day"
+                height="400"
+                width="225"
+                loading="lazy"
+              />
+              <figcaption>
+                Credits :
+                <a
+                  href="https://www.pexels.com/@shreyas-gosavi-751124/gallery/"
+                  title="Link to Shreyas Gosavi's pexel profile"
+                  target="_blank"
+                  >@shreyas-gosavi</a
+                >
+                from pexels community.
+              </figcaption>
+            </figure>
+          </article>
+
+          <article style="display: inline-block">
+            <figure>
+              <img
+                src="../images/image-3.jpg"
+                alt="Image of a white pole in a sunny day"
+                height="400"
+                width="225"
+                loading="lazy"
+              />
+              <figcaption>
+                Credits :
+                <a
+                  href="https://www.pexels.com/@shreyas-gosavi-751124/gallery/"
+                  title="Link to Shreyas Gosavi's pexel profile"
+                  target="_blank"
+                  >@shreyas-gosavi</a
+                >
+                from pexels community.
+              </figcaption>
+            </figure>
+          </article>
+
+          <article style="display: inline-block">
+            <figure>
+              <img
+                src="../images/image-4.jpg"
+                alt="Image of a white pole in a sunny day"
+                height="400"
+                width="225"
+                loading="lazy"
+              />
+              <figcaption>
+                Credits :
+                <a
+                  href="https://www.pexels.com/@shreyas-gosavi-751124/gallery/"
+                  title="Link to Shreyas Gosavi's pexel profile"
+                  target="_blank"
+                  >@shreyas-gosavi</a
+                >
+                from pexels community.
+              </figcaption>
+            </figure>
+          </article>
+        </section>
+
+        <section>
+          <h3>Videos :</h3>
+
+          <article style="display: inline-block">
+
+            <video height="180" width="320" controls muted type="video/mp4">
+              <source src="../videos/sampleVideo1.mp4" />
+              <p>This video type is not supported in yout browser.</p>
+            </video>
+
+          </article>
+
+          <article style="display: inline-block">
+
+            <video height="180" width="320" controls muted type="video/mp4">
+              <source src="../videos/sampleVideo2.mp4" />
+              <p>This video type is not supported in yout browser.</p>
+            </video>
+
+          </article>
+        </section>
+
+        <section>
+          <h3>Videos with Captions : </h3>
+          <p>We can also add captions to the videos with the help of <em>track</em> element.</p>
+          <article style="display: inline-block">
+
+            <video height="180" width="320" controls muted type="video/mp4">
+              <source src="../videos/sampleVideo2.mp4" />
+              <p>This video type is not supported in yout browser.</p>
+              <track kind="subtitles" srclang="eng" src="../videos/Captions/SampleCaption.vtt" label="english"></track>
+            </video>
+
+          </article>
+        </section>
+
+      </article>
+    </main>
+    <!-- End Main  -->
+
+    <!-- There can be more than one footer-element per html-page -->
+    <footer></footer>
+  </body>
+</html>
