@@ -315,26 +315,37 @@
 
           <article style="display: inline-block">
 
-            <video height="180" width="320" controls muted type="video/mp4"> 
-              <source src="../videos/sampleVideo1.mp4">
-              <p>
-                This video type is not supported in yout browser.
-              </p>
+            <video height="180" width="320" controls muted type="video/mp4">
+              <source src="../videos/sampleVideo1.mp4" />
+              <p>This video type is not supported in yout browser.</p>
             </video>
+
           </article>
 
           <article style="display: inline-block">
-            <video height="180" width="320" controls muted type="video/mp4"> 
-              <source src="../videos/sampleVideo2.mp4">
-              <p>
-                This video type is not supported in yout browser.
-              </p>
+
+            <video height="180" width="320" controls muted type="video/mp4">
+              <source src="../videos/sampleVideo2.mp4" />
+              <p>This video type is not supported in yout browser.</p>
             </video>
 
           </article>
-
-
         </section>
+
+        <section>
+          <h3>Videos with Captions : </h3>
+          <p>We can also add captions to the videos with the help of <em>track</em> element.</p>
+          <article style="display: inline-block">
+
+            <video height="180" width="320" controls muted type="video/mp4">
+              <source src="../videos/sampleVideo2.mp4" />
+              <p>This video type is not supported in yout browser.</p>
+              <track kind="subtitles" srclang="eng" src="../videos/Captions/SampleCaption.vtt" label="english"></track>
+            </video>
+
+          </article>
+        </section>
+
       </article>
     </main>
     <!-- End Main  -->
