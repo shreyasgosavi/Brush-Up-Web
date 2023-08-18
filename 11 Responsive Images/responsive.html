@@ -14,21 +14,34 @@
   <body>
     <header>
       <h1>This Page has Responsive Images</h1>
-      <p>Images below look same but are of different size which loads based on the resolution of the display. </p>
+      <p>
+        Images below look same but are of different size which loads based on
+        the resolution of the display.
+      </p>
     </header>
 
     <main>
+      <article>
+        <header>
+          <h2>Image of a tree : Resolution Switching</h2>
+        </header>
 
-        <article>
-            
-        </article>
+        <img
+          srcset="
+            ../images/responsive/landscape_image_300.jpg 300px,
+            ../images/responsive/landscape_image_500.jpg 800px,
+            ../images/responsive/landscape_image_1200.jpg 1200px
+          "
+          sizes="(max-width: 499w) 300px,
+            (max-width: 1199w) 800px,
+            (min-width: 1200w) 1200px"
+          alt="Elva dressed as a fairy"
+        />
+      </article>
 
-        <article>
-            <picture>
-
-            </picture>
-        </article>
-
+      <article>
+        <picture> </picture>
+      </article>
     </main>
 
     <footer></footer>
