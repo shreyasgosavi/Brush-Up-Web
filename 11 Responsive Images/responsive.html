@@ -24,26 +24,39 @@
     <main>
       <article>
         <header>
-          <h2>Image of a flower : Resolution Switching</h2>
+          <h2>Image of a leaves : Resolution Switching</h2>
         </header>
 
-        <!-- <img src="http://127.0.0.1:5500/Basic/images/Responsive/landscape_image_500.jpg" alt="Image of a white flower"> -->
-
-        <section style="display:inline-block;margin-inline:20% 30%;">
-          <img
-            srcset="
-              ../images/Responsive/landscape_image_300.jpg  350w,
-              ../images/Responsive/landscape_image_500.jpg  550w,
-              ../images/Responsive/landscape_image_700.jpg  750w,
-              ../images/Responsive/landscape_image_780.jpg 1200w
-            "
-            sizes=" (max-width: 600px) 300px,
-                    (max-width: 700px) 500px,
-                    (max-width: 1000px) 700px,
-                    1100px,"
-            src=""
-            alt="Leaves of a tree"
-          />
+        <section style="display: inline-block; margin: 0 auto;">
+          
+          <figure >
+            <img
+              srcset="
+                ../images/Responsive/landscape_image_100.jpg 350w,
+                ../images/Responsive/landscape_image_250.jpg 550w,
+                ../images/Responsive/landscape_image_500.jpg 750w
+              "
+              sizes=" (max-width: 450px) 300px,
+                      (max-width: 900px) 500px,
+                      (min-width: 1200px) 700px
+                    "
+              src=""
+              alt="Leaves of a tree"
+            />
+            <figcaption>
+              <p style="text-align: center">
+                Credits :
+                <a
+                  href="https://www.pexels.com/@shreyas-gosavi-751124/gallery/"
+                  title="Link to Shreyas Gosavi's pexel profile"
+                  target="_blank"
+                  >@shreyas-gosavi</a
+                >
+                from pexels community.
+              </p>
+            </figcaption>
+          </figure>
+        
         </section>
       </article>
 
@@ -52,12 +65,47 @@
           <h2>Landscape image : Art Direction</h2>
         </header>
 
-        <picture>
-          <source media="" srcset="" />
-          <source media="" srcset="" />
-          <source media="" srcset="" />
-          <img src="" alt="" />
-        </picture>
+        <section style="display: inline-block; margin: 0 auto;">
+          <figure>
+            <picture>
+
+              <source
+                media="(max-width: 450px)"
+                srcset="../images/Responsive/cat_portrait_150.jpg"
+              />
+
+              <source
+                media="(max-width: 800px)"
+                srcset="../images/Responsive/cat_portrait_300.jpg"
+              />
+
+              <source
+                media="(max-width: 1199px)"
+                srcset="../images/Responsive/cat_landscape_500.jpg"
+              />
+
+              <source
+                media="(min-width: 1200px)"
+                srcset="../images/Responsive/cat_landscape_700.jpg"
+              />
+              
+              <img src="" alt="" />
+            </picture>
+
+            <figcaption>
+              <p style="text-align: center">
+                Credits :
+                <a
+                  href="https://www.pexels.com/@shreyas-gosavi-751124/gallery/"
+                  title="Link to Shreyas Gosavi's pexel profile"
+                  target="_blank"
+                  >@shreyas-gosavi</a
+                >
+                from pexels community.
+              </p>
+            </figcaption>
+          </figure>
+        </section>
       </article>
     </main>
 
