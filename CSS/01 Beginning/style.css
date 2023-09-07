@@ -9,3 +9,34 @@ p, li{
 ul{
     list-style-type: circle;
 }
+
+li.special{
+    font-weight: bolder;
+    background-color: bisque;
+}
+
+/*Descendant combinator*/
+li em{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: crimson;
+    color:aliceblue;
+}
+
+/*adjacent descendant*/
+h1 + p{
+    font-weight: 600;
+}
+
+
+/*Styling Links */
+
+a:link{
+    color:cadetblue;
+
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(128, 106, 59);
+}
+
