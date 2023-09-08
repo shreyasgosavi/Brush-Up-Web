@@ -40,3 +40,28 @@ a:hover{
     color: rgb(128, 106, 59);
 }
 
+/* Cascading & Specificity  */
+
+section p{
+    color:red;
+    font-weight: 600;
+}
+
+.specificityClass{
+    color:rgb(211, 84, 84);
+}
+
+#specificityID{
+    color:rgb(30, 105, 210);
+}
+
+
+section p{
+    color:aquamarine;
+    border: 1px;
+}
+
+
+
+
+
