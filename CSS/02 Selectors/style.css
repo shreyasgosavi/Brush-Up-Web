@@ -18,3 +18,13 @@
     background-color: yellow;
 
 }
+
+#pseudoClass:hover{
+    color:bisque;
+    background-color: rgb(56, 52, 52);
+}
+
+#pseudoElement::first-letter{
+    color:rgb(149, 255, 0);
+    font-size: xx-large;
+}
