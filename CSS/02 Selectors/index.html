@@ -14,7 +14,7 @@
     </header>
     
     <main>
-        <article>
+        <article id="selectorList">
 
             <header>
                 <h2>Selector List</h2>
@@ -24,7 +24,7 @@
                 <h3>About</h3>
                 <p>In this we group HTML-elements having same <strong>CSS-rules</strong>.</p>
 
-                <i>Here is the catch !! If any of the selector from the group is invalid then rules for all the selectors will be skipped.</i>
+                <i>Here is the catch !! If any of the selector from the group has a syntax error then rules for all the selectors of that group will be skipped.</i>
             </section>
 
             <section class="invalidSelector">
@@ -33,6 +33,57 @@
                 <em>The color of this line is also green.</em>
             </section>
             
+        </article>
+
+        <article id="typesOfSelectors">
+            <header>
+                <h2>Types Of Selectors</h2>
+            </header>
+
+            <section id="typesClassId">
+                <h3>Based on Type, Class and Id. </h3>
+                <p>This includes mentioning HTML elements, class and id's.</p>
+                <p>Let's look at them :</p>
+                <ul>
+                    <li><span>This is styled based on the HTML ELEMENT</span></li>
+                    <li><span class="classType">Styled Based on the Class Name</span></li>
+                </ul>
+
+            </section>
+
+            <section id="attributeSelectors">
+                <h3>Attributes of Element</h3>
+
+                <p>We can get the element based on its attribute!! They are mentioned inside '[ ]' after specifying the selector.</p>
+                <p>Here highlighting all the elements having attribute <em>class</em>.</p>
+
+                <code class="attrSelector">This has a class attribute.</code><br>
+                <i class="someClass">Heyy I also have a class attribute.</i>
+
+            </section>
+
+            <section id="pseudoSelectors">
+                <h3>Pseudo Selectors</h3>
+
+                <section id="introduction">
+                    <p>There are two <em>pseudo-selectors</em> that helps us to grab the HTML elements in a different way.</p>
+                    <ul>
+                        <li><b>Pseudo-Class</b> : Selects an element based on its state (hover, active).</li>
+                        <li><b>Pseudo-Element</b> : Selects a portion of specified Element based on the given property.</li>
+                    </ul>
+                </section>
+
+                <section id="details">
+                    
+
+                </section>
+
+            </section>
+
+        </article>
+
+        <article id="">
+
         </article>
     </main>
 

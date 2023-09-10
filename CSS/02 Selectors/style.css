@@ -1,5 +1,20 @@
-.invalidSelector p, .invalidSelector em{
-
+.invalidSelector p, ..invalidSelector em{
     color: green;
+}
+
+#typesClassId ul{
+    color:rgb(138, 149, 64);
+    font-weight: 500;
+}
+
+.classType{
+    color:blue;
+    font-style: oblique;
+}
+
+/* Selecting Elements having class attribute inside the 'attributeSelectors' section. */
+#attributeSelectors [class]{
+
+    background-color: yellow;
 
 }
