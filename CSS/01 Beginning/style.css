@@ -13,6 +13,7 @@ ul{
 li.special{
     font-weight: bolder;
     background-color: bisque;
+    transform: translateX(20px);
 }
 
 /*Descendant combinator*/
@@ -43,7 +44,7 @@ a:hover{
 /* Cascading & Specificity  */
 
 section p{
-    color:red;
+    color:burlywood;
     font-weight: 600;
 }
 
