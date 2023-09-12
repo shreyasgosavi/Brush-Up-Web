@@ -28,3 +28,14 @@
     color:rgb(149, 255, 0);
     font-size: xx-large;
 }
+
+
+
+/* ########################### */
+
+.blackBorder.blueFont.italics{
+    border: 1px solid black;
+    color: blue;
+    font-style: italic;
+}
+
