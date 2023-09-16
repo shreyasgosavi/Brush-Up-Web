@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Shreyas Gosavi">
-    <meta name="description" content="This page demonstrates Pseudo Selectors">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Shreyas Gosavi" />
+    <meta
+      name="description"
+      content="This page demonstrates Pseudo Selectors"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pseudo Selectors</title>
-</head>
-<body>
-
+    <link rel="stylesheet" href="pseudoSelectors.css">
+  </head>
+  <body>
     <header>
-        <h1>Pseudo Selector</h1>
-        <p>We can get HTML elements of the page in different ways, one such way is using the <em>Pseudo-selectors.</em></p>
+      <h1>Pseudo Selector</h1>
+      <p>
+        We can get HTML elements of the page in different ways, one such way is
+        using the <em>Pseudo-selectors.</em>
+      </p>
 
-        <p>There are two types of pseudo-selectors :</p>
-        <ul>
-            <li>Pseudo Class</li>
-            <li>Pseudo Elements</li>
-        </ul>
+      <p>There are two types of pseudo-selectors :</p>
+      <ul>
+        <li>Pseudo Class</li>
+        <li>Pseudo Elements</li>
+      </ul>
     </header>
 
     <main>
-        <h2>Pseudo Class :</h2>
-        <p>This selectors are used to select the elements based on the state of the element. After selecting the element it adds the styling property to those elements, behavior is like adding a class to the elements but using <em>pseudo-class</em> makes the code more maintainable. 
-        </p>    
+      <article id="pseudo-class">
+        <header>
+            <h2>Pseudo Class :</h2>
+            <p>
+            This selectors are used to select the elements based on the state of
+            the element. After selecting the element it adds the styling property
+            to those elements, behavior is like adding a class to the elements but
+            using <em>pseudo-class</em> makes the code more maintainable.
+            </p>
+        </header>
 
-        
+        <article id="pseudoClassExamples">
+            <h2>Examples :</h2>
+            <section id="generalSelectors">
+                <h3>Using General Selectors :</h3>
+
+                <p>This <strong>para-element</strong> will be highlighted as it is the first-p element of this article.</p>
+                <p>This will not be highlighted</p>
+            </section>
+
+            <section id="userActions">
+                <h3>Pseudo Selectors On User Action :</h3>
+                <p>This paragraph will change to different color while hovering.</p>
+            </section>
+
+        </article>
+
+      </article>
+
+      <article>
+        <header>
+            <h2>Pseudo Elements :</h2>
+            <p>
+                This selectors is used to select the part of an element and apply style to it.
+            </p>
+        </header>
+
+        <article id="pseudoElementExamples">
+            <h2>Examples :</h2>
+            <section id="selectingFirstLine">
+
+                <h3>Selecting First line of a paragraph :</h3>
+
+                <p>On this particular day, the sun shone brightly in the sky, casting its warm rays upon the earth below. The atmosphere was filled with a sense of tranquility and serenity, as the gentle breeze blew through the trees and the birds chirped melodiously. The verdant grass and colorful flowers swayed in the wind, creating a picturesque scene. The radiant sun illuminated the landscape, highlighting its natural beauty and splendor. It was a day of pure bliss and joy, a moment to appreciate the wonders of nature and the simple pleasures of life. Truly, it was a sunny day to be cherished and remembered.</p>
+            </section>
+
+            <section id="beforeSelector">
+                <h3>Adding Elements Before Paragraph Using CSS:</h3>
+                <p>There are used to add symbols to the list and most importantly they don't change the DOM.</p>
+                
+                <p>Some value will be added before this para.</p>
+            </section>
+
+        </article>
+
+
+      </article>
 
     </main>
-    
-</body>
+  </body>
 </html>

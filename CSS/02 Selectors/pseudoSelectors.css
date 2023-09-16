@@ -1,0 +1,16 @@
+#generalSelectors :first-child{
+    background-color: yellow;
+}
+
+#userActions p:hover{
+    font-size: larger;
+    color:brown;
+}
+
+#selectingFirstLine p::first-line{
+    background-color: blanchedalmond;
+}
+
+#beforeSelector p::before{
+    content: "I am the added Content..";
+}
