@@ -40,6 +40,12 @@
 }
 
 /* ########################### */
+
+
+/* Descendant Selectors */
+#descendantSelectors #result{
+    color:red;
+}
  
 
 
