@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <meta name="author" content="Shreyas.D.Gosavi">
+    <meta name="description" content="This page covers the specifiy concept of CSS">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Specificity</h1>
+    </header>
+
+    <main>
+        <article>
+            <div id="outer" class="container">
+                <div id="inner" class="container">
+                    <ul>
+                        <li class="nav"><a href="#">One</a></li>
+                        <li class="nav" id="second"><a href="#">Two</a></li>
+                    </ul>
+                </div>
+            </div>
+                
+        </article>
+    </main>
+    
+</body>
+</html>
