@@ -1,1 +1,16 @@
 @layer firstLayer, secondLayer;
+
+@layer firstLayer{
+
+    #layers_in_action > p{
+        color: brown;
+    }
+}
+
+@layer secondLayer{
+
+    #layers_in_action > p{
+        color: yellow;
+    }
+
+}
