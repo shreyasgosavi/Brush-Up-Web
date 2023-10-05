@@ -1,4 +1,26 @@
+/* unlayer style which is placed at the end of the layers and always takes the precedence. */
+body{
+    background-color: rgb(157, 113, 55);
+}   
+
+@layer{
+
+    body{
+        background-color: burlywood;
+    }
+}
+
 @layer firstLayer, secondLayer;
+
+/*
+    It does not appends the style in previous anonymous layer but creates a new anonymous layer.
+*/
+@layer{
+
+    body{
+        background-color: bisque;
+    }
+}
 
 @layer firstLayer{
 
@@ -13,4 +35,12 @@
         color: yellow;
     }
 
+}
+
+@layer firstLayer{
+
+    #layers_in_action > p{
+        color: rgb(117, 75, 75);
+        border: 2px solid black;
+    }
 }
