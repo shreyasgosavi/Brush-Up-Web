@@ -1,0 +1,10 @@
+@layer backgroundthemeLayer, fontLayer;
+@import url('../style.css') layer(backgroundthemeLayer);
+
+@layer backgroundthemeLayer{
+
+    body{
+        color: rgb(95, 142, 143);
+        background-color: rgb(190, 190, 147);
+    }
+}
