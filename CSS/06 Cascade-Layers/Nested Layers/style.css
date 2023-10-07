@@ -1,5 +1,5 @@
 @layer backgroundthemeLayer, fontLayer;
-@import url('../style.css') layer(backgroundthemeLayer);
+@import url('../style.css') layer(anotherLayer); /* Import layers needs to defined before CSS declarations but it can be defined after layer declarations.*/
 
 @layer backgroundthemeLayer{
 
