@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX-MODEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>The Box-Model</h1>
+        <p>Every element in a page is a box and it is the property of the box that let's us build complex web-pages with different alignments. Here we will look at different Box-properties.</p>
+    </header>
+
+    <main>
+
+        <article>
+            <header>
+                <h2>Display Types</h2>
+                <p>Box has two display types : inner and outer display type. Each of those property can take value which sets the behavious of the boxes which sets the flow of the page.</p>
+            </header>
+
+            <section id="outerDisplayType">
+                <h3>Outer Display Type</h3>
+                <p>Outer display type can have following values : block and inline.</p>
+
+                <div>
+                    <div style="display:inline;border: 2px solid yellow;">THIS IS INLINE1</div>
+                    <div style="display:inline; border: 2px solid yellow;">THIS IS INLINE2</div>
+                    <!-- <div style="display:block; padding-inline: 40px;border:2px solid black;padding-block:30px;">THIS IS BLOCK</div> -->
+                </div>
+
+            </section>
+
+        </article>
+
+
+        <article>
+            <header>
+                <h2>Box-Model</h2>
+                <p>Box-Model in CSS includes working with different properties of the box like <strong>height, width, padding, margin</strong> which entirely builds a block on the page. Based on how the total height & width of the box is calculated the <em>Box-Model</em> is categorised into two types .</p>
+                <ul>
+                    <li>Standard Box-Model (default)</li>
+                    <li>Alternate Box-Model</li>
+                </ul>
+            </header>
+
+            <section class="typeOfBoxModel">
+                <h3>Standard Box-Model</h3>
+
+                <div id="standardBoxModel">
+                    <p>This is the content</p>
+                </div>
+
+                <p>Here the width and height specified in the css-rule is not the actual width of the box, it takes additional space for borders and padding.</p>
+
+            </section>
+
+            <section class="typeOfBoxModel">
+                <h3>Alternate Box-Model</h3>
+
+                <div id="alternateBoxModel">
+                    <p>This is the content</p>
+                </div>
+
+                <p>Here the width and height specified in the css-rule is same as the width of the box, it takes additional space for borders and padding.</p>
+
+            </section>
+
+
+        </article>
+
+    </main>
+
+
+</body>
+</html>

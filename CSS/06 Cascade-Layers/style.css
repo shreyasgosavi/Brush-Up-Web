@@ -1,4 +1,6 @@
 /* unlayer style which is placed at the end of the layers and always takes the precedence. */
+
+/* Layer precedance in this css --> Anonymous-1 , first-layer, second-layer, Anonymous-2 */
 body {
     background-color: rgb(116, 92, 61);
 }
@@ -6,6 +8,10 @@ body {
 @layer {
     body {
         background-color: burlywood;
+    }
+
+    h1{
+        color: white;
     }
 }
 
@@ -18,12 +24,20 @@ body {
     body {
         background-color: bisque;
     }
+
+    h1{
+        color: whitesmoke;
+    }
 }
 
 @layer firstLayer {
 
     #layers_in_action > p {
         color: brown;
+    }
+
+    h1{
+        color: red;
     }
 }
 
