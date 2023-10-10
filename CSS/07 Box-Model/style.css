@@ -29,3 +29,44 @@
 #alternateBoxModel> p{
     background-color: aquamarine;
 }
+
+
+/* ---------------------------------------------------------------- */
+#blockLayout{
+    border:1px solid black;
+}
+
+#blockLayout p{
+    background-color: yellow;
+    border:1px solid red;
+}
+
+#firstPara{
+    margin: 50px;
+}
+
+#secondPara{
+    margin: 30px;
+}
+
+/* ---------------------------------------------------------------- */
+
+#spanLayout{
+    border:1px solid black;
+}
+
+#spanLayout span{
+    background-color: rgb(255, 174, 0);
+    border:1px solid rgb(255, 0, 0);
+}
+
+#firstSpan{
+    margin: 50px;
+}
+
+#secondSpan{
+    margin: 30px;
+}
+
+
+

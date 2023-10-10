@@ -35,7 +35,7 @@
         </article>
 
 
-        <article>
+        <article id="boxModel">
             <header>
                 <h2>Box-Model</h2>
                 <p>Box-Model in CSS includes working with different properties of the box like <strong>height, width, padding, margin</strong> which entirely builds a block on the page. Based on how the total height & width of the box is calculated the <em>Box-Model</em> is categorised into two types .</p>
@@ -67,6 +67,30 @@
 
             </section>
 
+
+        </article>
+
+        <article id="marginCollapsing">
+            <header>
+                <h2>Margin-Collapsing</h2>
+                <p>Margins of two adjacent blocks are not added to get the final margin, the largest value between them is selected. If the margin is negative then the space between the boxes decreases and might overlap with other element. </p>
+            </header>
+
+            <section>
+                <h3>Block-Layout</h3>
+                <div id="blockLayout"> 
+                    <p id="firstPara">This has margin of 50 px in all directions.</p>
+                    <p id="secondPara">This para has top margin of 30px but due to collapsing the margin is 50px.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Inline-Layout</h3>
+                <div id="spanLayout"> 
+                    <span id="firstSpan">This has margin of 50 px in all directions.</span>
+                    <span id="secondSpan">In span elements margin is visible only in inline direction and does not collapse.</span>
+                </div>
+            </section>
 
         </article>
 
