@@ -29,3 +29,15 @@
 #alternateBoxModel> p{
     background-color: aquamarine;
 }
+
+
+
+/* ------------------ */
+
+#setBorder{
+
+    border-top-style:solid;
+    border-top-width: 5px;
+    border-top-color: blue;
+
+}
