@@ -67,3 +67,15 @@
 #secondSpan{
     margin: 30px;
 }
+
+/* ------------------ */
+
+#setBorder{
+
+    border-top-style:solid;
+    border-top-width: 5px;
+    border-top-color: blue;
+
+    border-inline: 3px dotted white;
+
+}
