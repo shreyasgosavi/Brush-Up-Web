@@ -31,15 +31,39 @@
 }
 
 
+/* ---------------------------------------------------------------- */
+#blockLayout{
+    border:1px solid black;
+}
 
-/* ------------------ */
+#blockLayout p{
+    background-color: yellow;
+    border:1px solid red;
+}
 
-#setBorder{
+#firstPara{
+    margin: 50px;
+}
 
-    border-top-style:solid;
-    border-top-width: 5px;
-    border-top-color: blue;
+#secondPara{
+    margin: 30px;
+}
 
-    border-inline: 3px dotted white;
+/* ---------------------------------------------------------------- */
 
+#spanLayout{
+    border:1px solid black;
+}
+
+#spanLayout span{
+    background-color: rgb(255, 174, 0);
+    border:1px solid rgb(255, 0, 0);
+}
+
+#firstSpan{
+    margin: 50px;
+}
+
+#secondSpan{
+    margin: 30px;
 }
