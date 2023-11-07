@@ -11,4 +11,12 @@
 
 .gridContainer{
     display: grid;
+    border:2px solid green;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 100px 60px;    
+    gap: 10px;
+}
+
+.gridContainer > div{
+    border:1px solid black;
 }
