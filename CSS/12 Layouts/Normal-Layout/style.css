@@ -1,0 +1,14 @@
+.flexContainer{
+    
+    display:flex;
+    border:1px solid black;
+    align-items: stretch;
+}
+
+.flexContainer > div{
+    flex: 1;
+} 
+
+.gridContainer{
+    display: grid;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Normal Layout</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -24,16 +25,35 @@
           <li>Exercise</li>
           <li>Cheer up friend</li>
         </ul>
+
+        <section style="border:1px solid black;">
+          <p>This para has a <a href="http://">link</a>, this link is inline.</p>
+          <p>This para has a <a style="display:block;" href="http://">link</a>, this link is block.</p>
+        </section><br>
       </section>
 
+      <section id="flexbox" >
 
-      <section  id="flexbox" style="display:flex;border:1px solid black;">
-
-        <h2 style="border:1px solid black;">This is flex-box</h2>
-
-        <div style="border:1px solid black;">This is how elements are layed-out here</div>
+        <h2>This is FlexBox</h2>
+        <section class="flexContainer">
+          <div style="border:1px solid black;margin:1em;">This is flex-box</div>
+          <div>Full form of flex-box is flexible-box-layout, which helps in arrangement of boxes.</div>
+          <div style="border:1px solid black;">This is how elements are layed-out here</div>
+        </section>
         <!-- <div>No changes are visible as we haven't set the rules for that.</div> -->
 
+      </section>
+
+      <section id="grid">
+
+        <h2>This is Grid</h2>
+
+        <section class="gridContainer">
+          <div style="border:1px solid black;margin:1em;">This is flex-box</div>
+          <div>Full form of flex-box is flexible-box-layout, which helps in arrangement of boxes.</div>
+          <div style="border:1px solid black;">This is how elements are layed-out here</div>
+        <!-- <div>No changes are visible as we haven't set the rules for that.</div> -->
+        </section>
       </section>
     </main>
 
