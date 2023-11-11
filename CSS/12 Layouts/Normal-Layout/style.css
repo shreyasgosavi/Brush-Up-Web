@@ -12,11 +12,54 @@
 .gridContainer{
     display: grid;
     border:2px solid green;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px 100px 60px;    
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 60px 100px;    
     gap: 10px;
 }
 
 .gridContainer > div{
     border:1px solid black;
+}
+
+
+.basicContainerStyle{
+    border: 2px solid black;
+}
+
+
+
+.basicContainerStyle p{
+    border: 1ps solid maroon;
+    padding-block:2rem;
+    background-color: rgba(101, 16, 56, 0.6);
+    color: blanchedalmond;
+    
+}
+
+p.customStyles{
+    background-color: burlywood;
+    color: black;
+}
+
+#staticPosition{
+    top: 5px;
+    left: 60px;
+}
+
+#relativePosition{
+    position: relative;
+    top: 5px;
+    left:60px;
+}
+
+#absolutePosition{
+    position: absolute;
+    top: 5px;
+    left:60px;
+}
+
+#fixedPosition{
+    position: fixed;
+    top: 5px;
+    left:60px;
 }
