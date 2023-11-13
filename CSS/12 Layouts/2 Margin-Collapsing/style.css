@@ -1,0 +1,17 @@
+.containerStyle{
+    align-items: center;
+    margin-top: 100px;
+}
+
+.containerStyle p{
+    /* border: 1px solid goldenrod; */
+    border: 3px solid maroon;
+    padding: 30px;
+    margin: 40px;
+    width: 50%;
+    background-color: rgba(218, 165, 32, 0.485);
+}
+
+footer > p{
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapsing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Margin-Collapsing</h1>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Effects of block's border,margin or padding on Margin-Collapsing of adjacent blocks.</h2>
+
+            <section style="border:1px solid yellow;">
+                <h3>Parent and child-element not having any seperation between their margins so margin-collapsing happens.</h3>
+                <div class="containerStyle">
+                    <p>This is another block element.</p>
+                </div>
+
+                <footer><p>Margins collapsed !!</p></footer>
+            </section>
+
+            <section style="border:1px solid yellow;">
+
+                <h3>Parent and child-element having a border between their margins and no margin-collapsing occurs.</h3>
+                <div class="containerStyle" style="border:1px solid green">
+                    <p>This is another block element.</p>
+                </div>
+                <footer><p>Both have seperate margins</p></footer>
+            </section>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
