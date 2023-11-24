@@ -1,0 +1,22 @@
+.gridContainer{
+    width:80%;
+    border:1px solid black;
+    display: grid;
+    grid-template-columns: 100px repeat(2,2fr);
+    grid-template-rows: 60px 80px;
+    row-gap: 5px;
+    column-gap: 10px;
+    grid-auto-rows: 70px;
+  }
+  
+.gridAutoContainer{
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+  .gridContainer > div{
+    background-color:lightblue;
+    padding-block:1em;
+    border-radius:3px;
+    border: 2px solid blue;
+  }
