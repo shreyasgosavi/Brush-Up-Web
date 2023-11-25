@@ -28,3 +28,17 @@ label {
         border: blue 2px dashed;
     }
 }
+
+#nestingCompundSelector > p{
+
+    &.borderYellow{
+        border:2px solid yellow;
+        padding:5px;
+    }
+    
+    &.backColorGreen{
+        background-color: greenyellow;
+    }
+
+}
+
