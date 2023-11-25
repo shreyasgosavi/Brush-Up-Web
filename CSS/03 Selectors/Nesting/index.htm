@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nesting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Nesting</h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>First Section</h2>
+                <p class="childElement">This is first child.</p>
+                <p class="childElement">This is second child.</p>
+                <p class="childElement">This is third child.</p>
+            </section>
+            <section class="another">
+                <h2>Second Section</h2>
+                <p class="childElement">This is first child.</p>
+                <p class="childElement">This is second child.</p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Demonstration of <strong>& Selector</strong></h2>
+            <form>
+
+                <label for="name">Name:
+                  <input type="text" id="name" />
+                </label>
+                <label for="email">email:</label>
+                <input type="text" id="email" />
+              </form>
+        </article>
+
+    </main>
+
+</body>
+
+</html>
