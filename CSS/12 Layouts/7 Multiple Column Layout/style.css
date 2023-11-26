@@ -1,0 +1,14 @@
+.multiColContainer{
+    column-count: 3;
+    column-width: 200px;
+    column-gap: 2em;
+    column-rule: 1px solid black;
+}
+
+footer{
+    padding:1rem;
+    background-color: rgba(165, 42, 42, 0.917);
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+}
