@@ -1,0 +1,29 @@
+#zIndexContainer{
+    border: 2px solid saddlebrown;
+    position: relative;
+}
+
+.absoluteElements{
+    padding: 1rem;
+    border:1px solid seagreen;
+    position: absolute;
+    &:nth-child(2){
+        background-color: bisque;
+        z-index:2;
+        
+    };
+    &:nth-child(3){
+        z-index: -1;
+        background-color: rgb(216, 42, 30);
+        top: 1rem;
+    };
+    &:nth-child(4){
+        z-index: -1;
+        background-color: rgb(180, 104, 12);
+        top:-1rem;
+    }
+}
+
+/* div:first-child{
+    background-color: bisque;
+} */
