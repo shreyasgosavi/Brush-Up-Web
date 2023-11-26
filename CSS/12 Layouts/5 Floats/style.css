@@ -1,0 +1,14 @@
+#floatContainer{
+    border:1px solid black;
+    overflow: auto;
+
+    & img{
+        float: right;
+        margin: 1rem;
+    }
+
+    & p{
+        background-color: aquamarine;
+        padding: 0.8rem;
+    }
+}
