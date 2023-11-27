@@ -16,12 +16,30 @@ h1{
     body{
         font-size: 15pt;
         color:cadetblue;
-        background-color: bisque;
+        background-color: aqua;
     }
+}
+
+.hoverableElement{
+    background-color: red;
 }
 
 @media screen and (orientation: landscape){
     body{
-        background-color: aqua;
+        background-color: bisque;
     }
 }
+
+@media screen and (hover:hover){
+    .hoverableElement{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 400px), (orientation: landscape) {
+    .complexMediaQueries {
+      background-color: yellow;
+      color:blue;
+
+    }
+  }
