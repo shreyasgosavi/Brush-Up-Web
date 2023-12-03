@@ -1,0 +1,4 @@
+Javascript :
+	It is a programming language that is used in web-development which puts 
+magic into the web-page with its ability to create interactive-web elements also ability to create dynamic-elements with DOM manipulation . The script runs in the browser. 
+	Server-Side JS is also available with Node.js.
