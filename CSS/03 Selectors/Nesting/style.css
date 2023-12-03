@@ -1,0 +1,44 @@
+section {
+    width: 80%;
+    margin-inline: auto;
+    border: 2px solid rosybrown;
+
+    .another {
+        border: 2px solid rebeccapurple;
+    }
+
+    & p {
+        background-color: chartreuse;
+        padding-block: 10px;
+    }
+}
+
+input {
+    /* styles for input not in a label  */
+    border: tomato 2px solid;
+}
+
+label {
+    /* styles for label */
+    font-family: system-ui;
+    font-size: 1.25rem;
+
+    & input {
+        /* styles for input in a label  */
+        border: blue 2px dashed;
+    }
+}
+
+#nestingCompundSelector > p{
+
+    &.borderYellow{
+        border:2px solid yellow;
+        padding:5px;
+    }
+    
+    &.backColorGreen{
+        background-color: greenyellow;
+    }
+
+}
+

@@ -1,0 +1,28 @@
+#floatContainer{
+    border:1px solid black;
+    overflow: auto;
+    & img{
+        float: right;
+        margin: 1rem;
+    }
+
+    & p{
+        background-color: aquamarine;
+        padding: 0.8rem;
+
+        /* &:nth-child(2){
+            clear:right;
+        } */
+    }
+    
+}
+
+.cleared{
+    clear: right;
+}
+
+.mixContainer{
+    border: 2px solid mediumvioletred;
+    display:flow-root;
+    background-color: cornsilk;
+}

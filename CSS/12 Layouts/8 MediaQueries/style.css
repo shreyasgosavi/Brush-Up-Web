@@ -1,0 +1,45 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:1px solid black;
+    margin:1em;
+    color: white;
+    padding: 1em;
+    background-color: brown;
+}
+
+h1{
+    border-bottom: 1px solid green;
+    box-shadow:1px 1px 10px -8px;
+}
+
+@media all and (min-width:700px){
+    body{
+        font-size: 15pt;
+        color:cadetblue;
+        background-color: aqua;
+    }
+}
+
+.hoverableElement{
+    background-color: red;
+}
+
+@media screen and (orientation: landscape){
+    body{
+        background-color: bisque;
+    }
+}
+
+@media screen and (hover:hover){
+    .hoverableElement{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 400px), (orientation: landscape) {
+    .complexMediaQueries {
+      background-color: yellow;
+      color:blue;
+
+    }
+  }
