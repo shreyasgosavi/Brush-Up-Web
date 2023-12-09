@@ -1,0 +1,1 @@
+1. Generating inverted-triangle pattern for line-width of heading <p> for small devices.
