@@ -107,11 +107,11 @@ nav svg{
     padding-top: 100px;
 }
 
-.moments-captured h2{
+.h2{
     font-weight: 900;
 }
 
-.moments-captured p{
+p{
     color: #787878;
     margin-bottom: 1rem;
     padding:10px;
@@ -122,6 +122,11 @@ nav svg{
     margin-top: 4%;
     display:flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h3{
+    font-weight: bolder;
 }
 
 .places-col{
@@ -131,18 +136,102 @@ nav svg{
     background-color: rgb(249, 217, 217);
     border-radius: 20px;
     transition: 0.6s;
-    /* color: white; */
+    position: relative;
+    overflow: hidden;
 }
 
 .places-col:hover{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
 }
 
-h3{
-    font-weight: bolder;
+
+.col-season{
+    padding:0;  
 }
 
-/* END    --  Main Section */
+.col-season img{
+    width: 100%;
+}
+
+
+/* START    :   Adding layer for hover effect for Seasons */
+.layer{
+    position:absolute;
+    width:100%;
+    top:0;
+    bottom:0;
+    transition:0.4s;
+}
+
+.layer h3{
+    color:white;
+    margin-top:30%;
+    font-weight: bolder;
+    position:absolute;
+    bottom:0;
+    opacity: 0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+}
+
+.layer:hover{
+    background-color: rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 2px bisque;
+}
+
+.layer:hover h3{
+    bottom: 40%;
+    opacity: 1;
+
+}
+
+/* END    :   Adding layer for hover effect for Seasons */
+
+.reviews{
+    flex: 40%;
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    border-radius: 10px;
+    background-color: burlywood;
+    margin: 10px;
+    /* width:100px; */
+    /* height:50px; */
+}
+
+.reviews img{
+    /* float: left; */
+    height: 50px;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+
+.contact-us{
+    margin:auto;
+    border-radius: 10px;
+    width:80%;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(8, 8, 40, 0.6),rgba(8, 8, 12, 0.6)), url("images/contactUsBg.png");
+    background-position: center;
+    background-size: cover;
+    padding:100px;
+    color:white;
+    text-shadow: 1px 1px 1px white;
+}
+
+/* END      --  Main Section */
+
+
+/* START    -- FOOTER */
+
+footer {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+/* END      --  FOOTER */
+
 
 @media(max-width: 700px){
 
@@ -155,7 +244,7 @@ h3{
     }
 
     .nav-links{
-        position:absolute;
+        position:fixed;
         background: rgb(13, 32, 96);
         height:100vh;
         width: 200px;
@@ -172,6 +261,7 @@ h3{
 
     .nav-links ul li{
         display: block;
+        text-align: center;
     }
 
     nav svg{
@@ -183,5 +273,10 @@ h3{
     .row{
         flex-direction: column;
     }
+
+    .col-season{
+        flex-basis: 400px;
+    }
 }
+
 

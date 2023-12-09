@@ -1,69 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trekkistan -- Welcome</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/logoImage.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logoImage.png" type="image/x-icon" />
     <script src="index.js"></script>
-</head>
-<body>
-
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
     <header class="header">
-        <nav>
-            <a href=""><img  id="pageLogo" src="images/logoImage.png" alt="Trekkistan Logo"></a>
-            <div class="nav-links" id="nav-items">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" onclick="closeNavigation()">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                  </svg>
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">JOIN US</a></li>
-                    <li><a href="">OUR MEMORIES</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" onclick="openNavigation()">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg>
-        </nav>        
-
-        <div class="pageHeading">
-            <h1>Explore the beauty of nature.</h1>
-            <p>There are so many places in the world which is fasinating and can't just be experienced virtually. Let's join the journey together.</p>
-            <div class="explore-btn">Explore</div>
+      <nav>
+        <a href=""
+          ><img id="pageLogo" src="images/logoImage.png" alt="Trekkistan Logo"
+        /></a>
+        <div class="nav-links" id="nav-items">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+            onclick="closeNavigation()"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">JOIN US</a></li>
+            <li><a href="">OUR MEMORIES</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
         </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+          onclick="openNavigation()"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </nav>
 
+      <div class="pageHeading">
+        <h1>Explore the beauty of nature.</h1>
+        <p>
+          There are so many places in the world which is fasinating and can't
+          just be experienced virtually. Let's join the journey together.
+        </p>
+        <div class="explore-btn">Explore</div>
+      </div>
     </header>
 
     <main>
-        <section class="moments-captured">
-            <h2>Unleash the Treasure of Beauty</h2>
-            <p>Some of the places where our compaingn takes.</p>
+      <section class="moments-captured">
+        <h2>Unleash the Treasure of Beauty</h2>
+        <p>Some of the places where our compaingn takes.</p>
 
-            <div class="row">
-                <div class="places-col">
-                    <h3>Place 1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, quo, dolor soluta minus temporibus numquam optio eos, molestias consequuntur iste laboriosam magni? </p>
-                </div>
-                <div class="places-col">
-                    <h3>Place 1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, quo, dolor soluta minus temporibus numquam optioeos, molestias consequuntur iste laboriosam magni? </p>
-                </div>
-                <div class="places-col">
-                    <h3>Place 1</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, quo, dolor soluta minus temporibus numquam optio eos, molestias consequuntur iste laboriosam magni? </p>
-                </div>
-                
+        <div class="row">
+          <div class="places-col">
+            <h3>Place 1</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, quo,
+              dolor soluta minus temporibus numquam optio eos, molestias
+              consequuntur iste laboriosam magni?
+            </p>
+          </div>
+          <div class="places-col">
+            <h3>Place 1</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, quo,
+              dolor soluta minus temporibus numquam optioeos, molestias
+              consequuntur iste laboriosam magni?
+            </p>
+          </div>
+          <div class="places-col">
+            <h3>Place 1</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, quo,
+              dolor soluta minus temporibus numquam optio eos, molestias
+              consequuntur iste laboriosam magni?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="moments-captured">
+        <h2>Every season can be a adventure.</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+          optio reiciendis obcaecati? Nihil iusto pariatur doloremqu.
+        </p>
+
+        <div class="row">
+          <div class="places-col col-season">
+            <img src="images/image-3.jpg" alt="" />
+            <div class="layer">
+              <h3>SUMMERS</h3>
             </div>
-        </section>
+            <!-- <p>Summers</p> -->
+          </div>
+          <div class="places-col col-season">
+            <img src="images/portrait.jpg" alt="" />
+            <div class="layer">
+              <h3>RAINY</h3>
+            </div>
+          </div>
+          <div class="places-col col-season">
+            <img src="images/portrait-2.jpg" alt="" />
+            <div class="layer">
+              <h3>WINTER</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="moments-captured">
+        <h2>What People Feel About US</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, optio.
+          Nobis odio enim minima similique atque eius eos esse itaque,
+          laboriosam a repellat repudiandae necessitatibus consectetur dolor
+          voluptatem cupiditate pariatur.
+        </p>
+
+        <div class="row">
+          <div class="reviews">
+            <img src="images/sampleProfile.jpg" alt="User 1" title="User 1" />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                inventore mollitia quidem placeat recusandae accusamus, quos
+                dolores, ab quaerat modi officia! Fugiat, accusantium modi.
+                Corporis dolores magni facere veniam cupiditate?
+              </p>
+
+              <h6>SHR</h6>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <div class="reviews">
+            <img src="images/sampleProfile2.png" alt="User 2" title="User 2" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              inventore mollitia quidem placeat recusandae accusamus, quos
+              dolores, ab quaerat modi officia! Fugiat, accusantium modi.
+              Corporis dolores magni facere veniam cupiditate?
+            </p>
+          </div>
+          <div class="reviews">
+            <img src="images/sampleProfile.jpg" alt="User 3" title="User 3" />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                inventore mollitia quidem placeat recusandae accusamus, quos
+                dolores, ab quaerat modi officia! Fugiat, accusantium modi.
+                Corporis dolores magni facere veniam cupiditate?
+              </p>
+              <h6>VIR</h6>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <div class="reviews">
+            <img src="images/sampleProfile.jpg" alt="User 1" title="User 1" />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                inventore mollitia quidem placeat recusandae accusamus, quos
+                dolores, ab quaerat modi officia! Fugiat, accusantium modi.
+                Corporis dolores magni facere veniam cupiditate?
+              </p>
+              <h6>SHU</h6>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="moments-captured">
+        <div class="contact-us">
+          <h2>Good times are just a click away!!</h2>
+        </div>
+      </section>
     </main>
 
     <footer>
-
+      <h2>About US</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum cum, at
+        harum ut laborum aliquam impedit doloremque provident officiis,
+        molestiae repudiandae quidem, culpa laboriosam esse itaque aspernatur.
+        Delectus, magnam minima?
+      </p>
+      <p>
+        Made for practice by
+        <a href="https://github.com/shreyasgosavi" style="text-decoration: none"
+          ><i class="bi bi-github" style="color: black"></i> Shreyas Gosavi</a
+        >
+        with reference of
+        <a href="https://www.youtube.com/watch?v=oYRda7UtuhA"
+          ><i class="bi bi-youtube" style="color: red"></i
+        ></a>
+        tutorial.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
-
