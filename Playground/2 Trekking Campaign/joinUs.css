@@ -1,0 +1,45 @@
+.join-us-header{
+    height: 50vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/about-us.jpg);
+    background-position: center;
+    background-size: cover; */
+    text-align: center; 
+    position: relative;
+    color:black;
+    overflow: hidden;
+}
+
+#video-cover{
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    top:0;
+    left: 0;
+    z-index: -1;
+    
+}
+
+.pageHeading{
+    transform: translate(-50%,-60%);
+}
+
+.join-us-content{
+    width: 80%;
+    margin:auto;
+    padding-top: 40px;
+}
+
+.message-left{
+    flex-basis: 60%;
+}
+
+.message-right{
+    /* position: relative;
+     */
+     flex-basis: 30%;
+}
+.message-right video{
+    width: 100%;
+
+}

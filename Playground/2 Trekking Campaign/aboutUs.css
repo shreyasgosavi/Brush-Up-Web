@@ -1,5 +1,6 @@
 /* START    About Us header */
 
+
 .about-us-header{
     height: 50vh;
     width: 100%;
@@ -18,7 +19,7 @@
     width: 80%;
     margin:auto;
     text-align:center;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .about-guide{
@@ -34,7 +35,13 @@
 }
 .about-guide img{
     width:100%;
+    border-radius: 20px;
 }
+
+.row-center{
+    justify-content: center;
+}
+
 
 
 
