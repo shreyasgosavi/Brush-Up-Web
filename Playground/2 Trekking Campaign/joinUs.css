@@ -1,5 +1,5 @@
 .join-us-header{
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     /* background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/about-us.jpg);
     background-position: center;
@@ -7,21 +7,50 @@
     text-align: center; 
     position: relative;
     color:black;
-    overflow: hidden;
+    /* border:3px solid firebrick; */
+    /* overflow: hidden; */
 }
+
+/* .video-container{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index: 2;
+    border:2px solid maroon;
+
+} */
 
 #video-cover{
     position: absolute;
-    width: 100%;
-    /* height: 100%; */
-    top:0;
-    left: 0;
+    right:0;
+    bottom:0;
+    min-height:100%;
+    min-width: 100%;
+    height:auto;
+    width:auto;
     z-index: -1;
-    
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+
+
+    /* position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden; */
 }
 
 .pageHeading{
     transform: translate(-50%,-60%);
+    text-shadow: 0 0 1px 0 rgba(0,0,0,0.4);
 }
 
 .join-us-content{
@@ -32,6 +61,7 @@
 
 .message-left{
     flex-basis: 60%;
+    align-self: center;
 }
 
 .message-right{
@@ -41,5 +71,32 @@
 }
 .message-right video{
     width: 100%;
+}
 
+.form-container{
+
+    width:60%;
+    margin-inline: auto;
+    /* border:1px solid black; */
+    box-shadow: 0.3px 0.3px 0.5px 0.5px;
+    padding:30px;
+}
+
+.form-container h3{
+    text-align: center;
+    
+}
+
+.form-container input,textarea{
+    width:100%;
+    padding:2px;
+    margin-block:10px;
+}
+
+.form-container button{
+    background: transparent;
+    color: orangered;
+    border-radius: 6px  ;
+    padding:13px;    
+    border:1px solid orangered;
 }
