@@ -1,0 +1,42 @@
+/* START    About Us header */
+
+.about-us-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/about-us.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center; 
+}
+
+h1{
+    font-weight: 900;
+    color:white;
+    margin-top:100px;
+}
+
+.about-us-content{
+    width: 80%;
+    margin:auto;
+    text-align:center;
+    padding-top: 60px;
+}
+
+.about-guide{
+    flex-basis: 40%;
+    text-align: left;
+    padding-inline:15px;
+    margin-bottom: 30px;
+}
+
+.about-guide p{
+    margin-top:20px;
+    padding:0;
+}
+.about-guide img{
+    width:100%;
+}
+
+
+
+/* END    About Us header */

@@ -57,6 +57,10 @@ nav img{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+main{
+    margin-block: 30px;
+}
+
 .pageHeading{
     color:white;
     width: 90%;
@@ -104,7 +108,7 @@ nav svg{
     width: 80%;
     margin:auto;
     text-align:center;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .h2{
@@ -211,7 +215,6 @@ h3{
     margin:auto;
     border-radius: 10px;
     width:80%;
-    margin-bottom: 50px;
     background-image: linear-gradient(rgba(8, 8, 40, 0.6),rgba(8, 8, 12, 0.6)), url("images/contactUsBg.png");
     background-position: center;
     background-size: cover;
@@ -227,8 +230,14 @@ h3{
 
 footer {
     margin: auto;
+    margin-top: 20px;
     width: 60%;
     text-align: center;
+}
+
+footer hr{
+    height:4px;
+    margin-bottom: 20px;
 }
 /* END      --  FOOTER */
 
