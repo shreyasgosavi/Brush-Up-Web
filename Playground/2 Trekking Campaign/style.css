@@ -245,7 +245,7 @@ footer hr{
 @media(max-width: 700px){
 
     .pageHeading h1{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .pageHeading p{
@@ -285,6 +285,29 @@ footer hr{
 
     .col-season{
         flex-basis: 400px;
+    }
+
+    .reviews{
+        flex-direction: column;
+    }
+
+    .reviews img{
+        width:20%;
+        margin-inline: auto;   
+    }
+
+    .contact-us{
+        padding:30px;
+        text-shadow: none;
+    }
+
+    footer{
+        width:80%;
+        text-align: initial;
+        margin: auto;
+    }
+    footer h2{
+        text-align: center;
     }
 }
 
