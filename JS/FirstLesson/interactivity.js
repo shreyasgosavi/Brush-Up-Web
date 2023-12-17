@@ -16,5 +16,15 @@ console.table([
 ]);
 
 console.clear();
-
 console.log("Console was cleared");
+
+//Variables
+let shr;
+dc = "df";
+console.log("DF " + dc);
+console.log("shr " + shr);
+
+// Challenge
+let name = "Shreyas";
+let gender = "M";
+let twitterHandle = "G7Shreyas";

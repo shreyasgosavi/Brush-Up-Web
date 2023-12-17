@@ -1,4 +1,24 @@
 Javascript :
 	It is a programming language that is used in web-development which puts 
 magic into the web-page with its ability to create interactive-web elements also ability to create dynamic-elements with DOM manipulation . The script runs in the browser. 
+	
 	Server-Side JS is also available with Node.js.
+
+
+	What can we do with Js:
+		1. Store data in a variable.
+		2. String-Operations
+		3. Helps to do specific action on certain event on the web-page
+		4. Changing the DOM with the help of api's
+		5. Writing functions which helps to avoid writing repetitive-code, etc
+
+	Apart from this the api's available can be used with java-script to do much more tasks.
+
+	In this case API's are generally categorized into two parts :
+		1. Browser APIs
+		2. 3rd Party APIs 
+
+	
+
+
+	

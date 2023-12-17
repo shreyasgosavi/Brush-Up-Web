@@ -4,7 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS-Getting Started</title>
-    <script src="interactivity.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll("button");
+
+        for (const button of buttons) {
+          button.addEventListener("click", createParagraph);
+        }
+
+        function createParagraph() {
+          const para = document.createElement("p");
+          para.textContent = "You clicked the button!";
+          document.body.appendChild(para);
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("keydown", () => {
+        console.log("HAHA you pressed a key !");
+      });
+      console.log("Am I visible");
+    </script>
   </head>
-  <body></body>
+  <body>
+    <button>Click me</button>
+  </body>
 </html>
