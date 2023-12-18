@@ -60,6 +60,7 @@
 
     <script>
       let randomNumber = Math.floor(Math.random() * 100) + 1;
+      console.log(randomNumber);
 
       const guesses = document.querySelector(".guesses");
       const lastResult = document.querySelector(".lastResult");
@@ -74,14 +75,42 @@
       //Adding event-listeners
       guessSubmit.addEventListener("click", checkGuess);
 
-      function checkGuess() {
-        const userGuess = Number(guessField.value);
+      function setGameOver() {
+        guessSubmit.disabled = true;
+        guessField.disabled = true;
 
+        resetButton = document.createElement("button");
+        resetButton.textContent = "Restart the game";
+        document.body.append(resetButton);
+        resetButton.addEventListener("click", reset);
+      }
+
+      function reset() {
+        guessCount = 1;
+
+        const resetParas = document.querySelectorAll(".resultParas p");
+        for (const resetPara of resetParas) {
+          resetPara.textContent = "";
+        }
+
+        guessSubmit.disabled = false;
+        guessField.disabled = false;
+        guessField.value = "";
+        guessField.focus();
+
+        resetButton.parentNode.removeChild(resetButton);
+
+        lastResult.style.backgroundColor = "white";
+        randomNumber = Math.floor(Math.random() * 100) + 1;
+      }
+
+      function checkGuess() {
+        // setGameOver();
+        const userGuess = Number(guessField.value);
         if (guessCount === 1) {
           guesses.textContent = "Previous guesses:";
         }
         guesses.textContent = `${guesses.textContent} ${userGuess}`;
-
         if (userGuess === randomNumber) {
           lastResult.textContent = "Congratulations! You got it right!";
           lastResult.style.backgroundColor = "green";
@@ -100,10 +129,10 @@
             lowOrHi.textContent = "Last guess was too high!";
           }
         }
-
         guessCount++;
         guessField.value = "";
         guessField.focus();
+        console.log(guessCount);
       }
     </script>
   </body>
