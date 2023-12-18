@@ -4,7 +4,6 @@ magic into the web-page with its ability to create interactive-web elements also
 	
 	Server-Side JS is also available with Node.js.
 
-
 	What can we do with Js:
 		1. Store data in a variable.
 		2. String-Operations
@@ -16,7 +15,38 @@ magic into the web-page with its ability to create interactive-web elements also
 
 	In this case API's are generally categorized into two parts :
 		1. Browser APIs
-		2. 3rd Party APIs 
+			- They come with the browser and gives lots of functionalities like 
+				1. Accessing and manipulating the DOM
+				2. Geographial-api's to access location-related data
+				3. Api's to access data about the environment in which it is running
+				4. We can also create graphics using Canvas & WebGL API.
+				5. Work with multi-media files using audio & video api's.   
+
+		2. 3rd Party APIs
+				- Don't come out of the box need to get them from the internet, various applications provide their own api to use it for development for example twitter-api, spotify-api.
+
+	 
+	What JS does? 
+		JavaScript is majorly used to alter HTML-CSS using the DOM-api's which can be changed based on some events or action that makes the page interactive.
+
+		When browser encounter js during parsing, it executes the js code from top-to-bottom so ordering of the contents in the code will matter.
+
+	Script-Loading Strategies :
+	
+	Variables :
+
+	Operators:
+
+	Conditional-Statement:
+
+	Events:
+
+		Events are things that happen in a browser like scrolling, clicking, typing, page-loading, video-playing,etc and after that a block of code is executed.
+
+		Event-Listener 	:  	Different event-listner waits for event to occur. 
+		Event-Handler 	:	After event is fired event-listener call event-handlers.
+
+	 
 
 	
 
