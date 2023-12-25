@@ -2,6 +2,7 @@ sh = "sff";
 
 console.log(sh);
 
+let a = b;
 // document.addEventListener("DOMContentLoaded", greetMessage);
 
 // function addMessage(name) {
