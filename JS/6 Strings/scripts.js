@@ -25,3 +25,25 @@ console.log(
 );
 c = c.replace("checkThis", "checkTHIS");
 console.log("Now for the last time lets check it c " + a.endsWith(c));
+
+let occurenceDemo =
+  "This is random and string and we will be finding the index of occurence of a number and its position and this is typed without looking at it so there can be type.";
+
+let occurIndex = 0;
+let position = 0;
+let positions = [];
+
+// console.log("Occurence of 'of'" + occurenceDemo.indexOf("of", position));
+
+while (position < occurenceDemo.length) {
+  position = occurenceDemo.indexOf("is", position);
+  if (position == -1) {
+    break;
+  }
+  //   console.log(position);
+  positions.push(position);
+  position++;
+  occurIndex++;
+}
+console.log("Positions : " + positions);
+console.log("Number of occurence Occurence : " + occurIndex);
