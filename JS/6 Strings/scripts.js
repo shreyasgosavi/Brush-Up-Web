@@ -47,3 +47,12 @@ while (position < occurenceDemo.length) {
 }
 console.log("Positions : " + positions);
 console.log("Number of occurence Occurence : " + occurIndex);
+
+console.log("Slicing text");
+console.log(occurenceDemo.slice(20));
+
+let stringS = "MAN675847583748sjt567654;Manchester Piccadilly";
+
+let finalStationString = stringS.slice(0, 3);
+finalStationString += " " + stringS.slice(stringS.indexOf(";") + 1);
+console.log(finalStationString);
