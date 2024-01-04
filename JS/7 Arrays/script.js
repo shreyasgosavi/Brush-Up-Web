@@ -36,3 +36,28 @@ console.log("Printing using for..of loop");
 for (let i of arr) {
   console.log(i);
 }
+
+//Using Map function to perform same operation to all elements of an array
+const newArray = arr.map((number) => {
+  return number * 2;
+});
+
+arr[2] = 10;
+console.log(arr);
+console.log("$$$$$$$$$$%$%$%$%$%$%$%");
+console.log(newArray);
+
+console.log("Filtering Elements");
+
+//Filtering values from array
+const filteredArray = arr.filter((number) => number > 5);
+arr[2] = 3;
+console.log(arr[2]);
+
+//Splitting string into list using split method
+const states = "MH, RJ, DL, AH";
+const stateList = states.split(",");
+
+//Joining arrays to get a string
+const resultString = stateList.join(",");
+console.log(resultString);
