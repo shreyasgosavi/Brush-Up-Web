@@ -1,3 +1,5 @@
+a = 45;
+
 // Arrays
 const arr = [2, 5, 23, 4];
 arr.push(6);
