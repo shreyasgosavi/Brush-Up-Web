@@ -27,3 +27,23 @@ function answerIt() {
       "It's up to you .. if you feel good then you can or else not.";
   }
 }
+
+//Switch - Case
+let a = 5;
+
+switch (a) {
+  case 4:
+    console.log("Not Matched");
+    break;
+
+  case 5:
+    console.log("Matched");
+  // break;
+
+  case 6:
+    console.log("Should not reach here");
+    break;
+
+  default:
+    console.log("Executed this method");
+}
