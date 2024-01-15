@@ -15,3 +15,14 @@ let objectMethod = {
 
 const result = objectMethod.addNumber(2, 3);
 console.log("Result " + result);
+
+//Function with default parameter
+function greetings(name = "") {
+  if (name) {
+    name = " " + name;
+  }
+  console.log(`Hello${name}, Good Morning have a nice day !! 😁`);
+}
+
+greetings();
+greetings("Shreyas");
