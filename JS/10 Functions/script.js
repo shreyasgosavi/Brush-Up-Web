@@ -26,3 +26,11 @@ function greetings(name = "") {
 
 greetings();
 greetings("Shreyas");
+
+// In case of addEventListener() browser will pass a parameter containing details about the event.
+
+let identifyButton = document.getElementById("findKey");
+
+identifyButton.addEventListener("keydown", function (event) {
+  console.log("Key Pressed was : " + event.key);
+});
