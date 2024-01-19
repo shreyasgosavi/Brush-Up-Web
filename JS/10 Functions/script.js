@@ -31,6 +31,17 @@ greetings("Shreyas");
 
 let identifyButton = document.getElementById("findKey");
 
-identifyButton.addEventListener("keydown", function (event) {
-  console.log("Key Pressed was : " + event.key);
+//Normal Anonymous Function
+// identifyButton.addEventListener("keydown", function (event) {
+//   console.log("Key Pressed was : " + event.key);
+// });
+
+//Arrow function
+// identifyButton.addEventListener("keydown", (event) => {
+//   console.log("Key pressed was : " + event.key);
+// });
+
+//Simplified
+identifyButton.addEventListener("keydown", (event) => {
+  console.log("Key pressed was : " + event.key);
 });
