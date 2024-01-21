@@ -45,3 +45,43 @@ let identifyButton = document.getElementById("findKey");
 identifyButton.addEventListener("keydown", (event) => {
   console.log("Key pressed was : " + event.key);
 });
+
+/*
+ Exercise :
+
+*/
+let pracSection = document.querySelector("#prac1");
+let count = 0;
+
+let sampleButton = document.createElement("button");
+sampleButton.textContent = "Pop Up Message";
+pracSection.appendChild(sampleButton);
+
+let deleteButton = document.createElement("button");
+deleteButton.textContent = "Delete text";
+pracSection.appendChild(deleteButton);
+
+//
+
+sampleButton.addEventListener("click", () => {
+  if (count !== 3) {
+    document.querySelector("#findKey").textContent = "";
+    let paraContent = document.createElement("p");
+    paraContent.textContent = "Text is generated";
+    paraContent.setAttribute("class", "sampleText");
+    pracSection.appendChild(paraContent);
+    count++;
+  } else {
+    document.querySelector("#findKey").value = "Reached the limit";
+  }
+});
+
+deleteButton.addEventListener("click", () => {
+  if (count != 0) {
+    let para = document.querySelector(".sampleText");
+    pracSection.removeChild(para);
+    count--;
+  } else {
+    document.querySelector("#findKey").value = "No text present";
+  }
+});
