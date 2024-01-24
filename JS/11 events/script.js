@@ -9,12 +9,13 @@ let count = 0;
 
 btn.addEventListener(
   "click",
-  () => {
+  (event) => {
     if (count === 5) {
       abortSignal.abort();
     } else {
       const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
       document.body.style.backgroundColor = rndCol;
+      console.log("Button is " + event.target);
       count++;
     }
   },
