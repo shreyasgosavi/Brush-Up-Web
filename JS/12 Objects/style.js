@@ -23,13 +23,19 @@ const name = "SHR";
 // sampleFunction.localFunction();
 
 const human = {
-  name: ["Shreyas", "Gosavi"],
+  name: { firstName: "Shreyas", secondName: "Gosavi" },
   age: 23,
   bio() {
-    console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old !`);
+    console.log(
+      `${this.name.firstName} ${this.name.secondName} is ${this.age} years old !`
+    );
   },
 
   bio2() {
-    console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old !`);
+    console.log(
+      `${this.name.firstName} ${this.name.secondName} is ${this.age} years old !`
+    );
   },
 };
+
+console.log(`Age is ${human[age]}`);
