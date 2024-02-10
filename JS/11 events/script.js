@@ -4,27 +4,37 @@ const parentDiv = document.querySelector("#containerElement");
 const childButton = document.querySelector("#btn-event");
 const textProperty = document.querySelector("#textElement");
 
-parentDiv.addEventListener("click", (e) => {
-  alert("Parent Box was clicked");
-});
+parentDiv.addEventListener(
+  "click",
+  (e) => {
+    console.log(`You clicked on a ${e.currentTarget.tagName} element`);
+    alert("Parent Box was clicked");
+  },
+  { capture: true }
+);
 
-childButton.addEventListener("click", (e) => {
-  let backgroundColor = `rgb(
+childButton.addEventListener(
+  "click",
+  (e) => {
+    console.log(`You clicked on a ${e.currentTarget.tagName} element`);
+    let backgroundColor = `rgb(
     ${Math.floor(Math.random() * 255)},
     ${Math.floor(Math.random() * 255)},
     ${Math.floor(Math.random() * 255)}
   )`;
 
-  let textColor = `rgb(
+    let textColor = `rgb(
     ${Math.floor(Math.random() * 255)},
     ${Math.floor(Math.random() * 255)},
     ${Math.floor(Math.random() * 255)}
   )`;
 
-  textProperty.style.backgroundColor = backgroundColor;
-  textProperty.style.color = textColor;
-  e.stopPropagation();
-});
+    textProperty.style.backgroundColor = backgroundColor;
+    textProperty.style.color = textColor;
+    e.stopPropagation();
+  },
+  { capture: true }
+);
 
 function random(number) {
   return Math.floor(Math.random() * (number + 1));
