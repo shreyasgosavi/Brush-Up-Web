@@ -1,4 +1,5 @@
-const name = "SHR";
+const helloook = "SHR";
+console.log("This " + this.name);
 
 /* Difference between Regular and arrow anonymous function */
 // let sampleFunction = {
@@ -38,4 +39,19 @@ const human = {
   },
 };
 
-console.log(`Age is ${human[age]}`);
+console.log(`Age is ${human["age"]}`);
+
+/* Start Constructors */
+
+function Game(name, players) {
+  this.name = name;
+  this.players = players;
+  this.printValue = function () {
+    console.log(`Name :: ${this.name} & total players ${this.players}`);
+  };
+}
+
+const cricket = new Game("Cricket", 11);
+cricket.printValue();
+
+/* End Constructors */
