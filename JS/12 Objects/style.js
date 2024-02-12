@@ -53,5 +53,13 @@ function Game(name, players) {
 
 const cricket = new Game("Cricket", 11);
 cricket.printValue();
-
 /* End Constructors */
+
+const myNotification = new Notification("Hello!");
+
+// Prototypes
+let simpleObject = { status: true }; // Prototype - object is default Object's prototype
+
+let arrObject = []; //Prototype Object - is differennt
+
+// Object.getPrototypeOf();
