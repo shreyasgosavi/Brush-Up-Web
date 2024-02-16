@@ -2,6 +2,13 @@ class Car {
   name = "";
   gear;
 
+  /* Class can only have one constructor */
+  //   constructor(name){
+  //     this.name = name;
+  //   }
+  //   constructor(gear){
+  //     this.gear = gear;
+  //   }
   constructor(name, gear) {
     this.name = name;
     this.gear = gear;
@@ -25,3 +32,5 @@ class Suv extends Car {
     console.log("I am best suited for travelling between cities");
   }
 }
+
+let suv = new Suv("Scorpio", "100hp");
