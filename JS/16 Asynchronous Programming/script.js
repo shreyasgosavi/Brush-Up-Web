@@ -26,17 +26,17 @@
 
 // log.textContent = "";
 
-//   const xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 
-//   xhr.addEventListener("loadend", () => {
-//     log.textContent = `${log.textContent}Finished with status: ${xhr.status}`;
-//   });
+xhr.addEventListener("loadend", () => {
+  log.textContent = `${log.textContent}Finished with status: ${xhr.status}`;
+});
 
-//   xhr.open(
-//     "GET",
-//     "https://raw.githubusercontent.com/mdn/content/main/files/en-us/_wikihistory.json",
-//   );
-// request.send();
+xhr.open(
+  "GET",
+  "https://raw.githubusercontent.com/mdn/content/main/files/en-us/_wikihistory.json"
+);
+xhr.send();
 
 // PROMISES ::
 // const fetchPromise = fetch(
@@ -62,16 +62,40 @@ console.log(fetchPromise);
 //The above code results in CallBack hell which becomes diffcult to maintain
 //Since then() method also returns a promise we can chain he method after the first then() method.
 
-fetchPromise
-  .then((response) => {
-    console.log(response);
-    console.log(`Received response: ${response.status}`);
-    return response.json();
-  })
+let thenPromise = fetchPromise.then((response) => {
+  console.log(response);
+  console.log(`Received response: ${response.status}`);
+  response.json();
+});
+
+let then2Promise = thenPromise.then((data) => {
+  console.log(data);
+});
+
+then2Promise
   .then((data) => {
-    console.log(data);
+    console.log("Data " + data);
   })
-  .catch(() => {
-    console.log("Error occured while fetching the data");
+  .then((response) => {
+    console.log("Again completed");
+  })
+  .then((response) => {
+    console.log("Again completed 2");
+  })
+  .then((response) => {
+    console.log("Again completed 3");
+  })
+  .then((response) => {
+    console.log("AGAAAINNNN");
   });
-console.log("Started request…");
+
+console.log("Then Promise ");
+console.log(thenPromise);
+
+console.log("Then Promise 2");
+console.log(then2Promise);
+
+//   .catch(() => {
+//     console.log("Error occured while fetching the data");
+//   });
+// console.log("Started request…");
