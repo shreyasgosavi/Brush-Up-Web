@@ -87,7 +87,11 @@ then2Promise
   })
   .then((response) => {
     console.log("AGAAAINNNN");
+  })
+  .catch(() => {
+    console.log("Error occured while fetching the data");
   });
+console.log("Started request…");
 
 console.log("Then Promise ");
 console.log(thenPromise);
@@ -95,7 +99,27 @@ console.log(thenPromise);
 console.log("Then Promise 2");
 console.log(then2Promise);
 
-//   .catch(() => {
-//     console.log("Error occured while fetching the data");
-//   });
-// console.log("Started request…");
+function promiseFunction() {
+  return new Promise((resolve, reject) => {
+    let i = 0;
+    while (i < 500) {
+      console.log(i);
+      i++;
+    }
+    if (i == 100) {
+      throw new Error("ERRORRR");
+    }
+
+    resolve("HAHAHA");
+  });
+}
+
+let a = promiseFunction()
+  .then((data) => {
+    console.log(`Returned data is ${data}`);
+  })
+  .catch((error) => {
+    console.log("Error occured");
+  });
+
+console.log("Promise is created and function is executing asynchronously");
