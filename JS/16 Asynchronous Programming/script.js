@@ -29,7 +29,7 @@
 const xhr = new XMLHttpRequest();
 
 xhr.addEventListener("loadend", () => {
-  log.textContent = `${log.textContent}Finished with status: ${xhr.status}`;
+  log.textContent = `${log.textContent} Finished with status: ${xhr.status}`;
 });
 
 xhr.open(
@@ -65,11 +65,11 @@ console.log(fetchPromise);
 let thenPromise = fetchPromise.then((response) => {
   console.log(response);
   console.log(`Received response: ${response.status}`);
-  response.json();
+  return response.json();
 });
 
 let then2Promise = thenPromise.then((data) => {
-  console.log(data);
+  console.log(`Data is ${data}`);
 });
 
 then2Promise
@@ -91,14 +91,15 @@ then2Promise
   .catch(() => {
     console.log("Error occured while fetching the data");
   });
-console.log("Started request…");
 
+console.log("Started request…");
 console.log("Then Promise ");
 console.log(thenPromise);
-
 console.log("Then Promise 2");
 console.log(then2Promise);
 
+
+//Custom promise function
 function promiseFunction() {
   return new Promise((resolve, reject) => {
     let i = 0;
@@ -109,7 +110,6 @@ function promiseFunction() {
     if (i == 100) {
       throw new Error("ERRORRR");
     }
-
     resolve("HAHAHA");
   });
 }
@@ -123,3 +123,17 @@ let a = promiseFunction()
   });
 
 console.log("Promise is created and function is executing asynchronously");
+
+
+// WORKER IN JS
+let worker = new Worker("./worker.js");
+
+worker.postMessage({
+  type: "Alert"
+})
+
+console.log("Message sent to worker");
+
+worker.addEventListener("message", (message)=>{
+  console.log(message);
+})
