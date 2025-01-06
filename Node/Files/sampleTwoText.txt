@@ -1,0 +1,1 @@
+This is another sample file that can be read by a process.
