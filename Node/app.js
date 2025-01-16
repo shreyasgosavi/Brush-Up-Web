@@ -1,13 +1,13 @@
-//Event-loop
+const httpModule = require('http');
 
-// It off-loads the task and registers a callback which is called after completing the task
 
-console.log("Started");
+const httpServer = httpModule.createServer((req,res)=>{
 
-setTimeout(()=>{
-    console.log("Executed after 2 seconds of break");
-    
-},2000);
+    console.log("Request reached");
+    console.log(req.url);
+    res.writeHead(200,{'content-type':'text/html'});
+    res.end("<h1>HELLO <i>Amazinggg</i></h1>");
+});
 
-console.log("Executed before the off-loaded task.");
-console.log("Executed before the off-loaded task. Another");
+httpServer.listen(4000);
+
