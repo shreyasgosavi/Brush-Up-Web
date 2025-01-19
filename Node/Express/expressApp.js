@@ -1,18 +1,23 @@
 const express = require('express');
 
-const server = express();
+const app = express();
 
-server.listen(5000);
+app.get('/getJsonData',(req,res)=>{
+    res.json([{name:'SHR'}]);
 
-server.get('/', (req,res)=>{
-
-    console.log("Landing Path");
-    res.writeHead(200,{'content-type':'text/html'});
-    res.write('Home Page').end();
 });
 
-server.all("*",(req,res)=>{
+app.get('/api/routeParameter/:rParameter', (req,res)=>{
 
-    res.status(404).send("Page Not Found");
-
+    res.status(200).send(`Route parameter is ${req.params.rParameter}`).end();
+    // res.status(200).send(`Route parameter is ${req.params.rParameter}`);
 })
+
+
+app.all('*',(req,res)=>{
+    res.status(404).send('Resource not available');
+});
+
+app.listen(5000,()=>{
+    console.log("Server is listening on port 5000");
+});

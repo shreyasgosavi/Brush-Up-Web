@@ -1,0 +1,1 @@
+alert(`Date : ${new Date().toDateString()}`);
